@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Search for files in local directory and edit selected in default editor.
+
+find . -type f -maxdepth 1 | fzf --preview 'bat {}' --height 25 --layout reverse | \
+	xargs -r "$EDITOR"

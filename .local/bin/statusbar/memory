@@ -1,0 +1,8 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) notify-send "🧠 Memory hogs" "$(ps axch -o cmd:15,%mem --sort=-%mem | head)" ;;
+	2) setsid -f "$TERMINAL" -e htop ;;
+esac
+
+free -h | sed -n '2{p;q}' | awk '{print $3 "/" $2}'

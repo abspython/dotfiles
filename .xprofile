@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# Fix Gnome Apps Slow  Start due to failing services
+# Add this when you include flatpak in your system
+# dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
+mpd &			# run mpd at startup
+remaps &		# run the remaps script, switching caps/esc and more; check it for more info
+setbg &			# set the background with the `setbg` script
+xcompmgr &		# xcompmgr for transparency
+$STATUSBAR &		# script for updating the status bar
+dunst &			# dunst for notifications
+xset r rate 300 50 &	# Speed xrate up
+unclutter &		# Remove mouse when idle
+redshift &              # run redshift at startup
+
+xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources &

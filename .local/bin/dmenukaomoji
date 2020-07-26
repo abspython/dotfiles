@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Fonts needed: gnu-free-fonts, ttf-arphic-uming, ttf-indic-otf, otf-ipafont
+#
+
+chosen=$(grep -v "#" ~/.local/bin/kaomoji | dmenu -i -l 20)
+[ ! "$chosen" ] && exit
+
+notify-send "$chosen" "copied to clipboard."
+c="${chosen%% [A-Z]*}"
+printf "%s" "$c" | xclip -sel clip

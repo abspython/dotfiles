@@ -1,0 +1,12 @@
+hash -d cac=${XDG_CACHE_HOME:-$HOME/.cache} 
+hash -d cf=${XDG_CONFIG_HOME:-$HOME/.config} 
+hash -d D=${XDG_DOWNLOAD_DIR:-$HOME/Downloads} 
+hash -d d=${XDG_DOCUMENTS_DIR:-$HOME/Documents} 
+hash -d h=$HOME 
+hash -d m=${XDG_MUSIC_DIR:-$HOME/Music} 
+hash -d mn=/mnt 
+hash -d pp=${XDG_PICTURES_DIR:-$HOME/Pictures} 
+hash -d sc=~/.local/bin 
+hash -d vv=${XDG_VIDEOS_DIR:-$HOME/Videos} 
+hash -d G=~/Downloads/GitRepos 
+hash -d sct=~/.local/bin/test 

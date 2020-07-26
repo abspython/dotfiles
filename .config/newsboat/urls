@@ -1,0 +1,50 @@
+# RSS Feeds
+"═════════════════════════════════| Highlights |═════════════════════════════════════"
+
+"query:Unread:unread = \"yes\""
+"query:Youtube:unread = \"yes\" and tags # \"youtube\""
+"query:Unixporn:unread = \"yes\" and tags # \"unixporn\""
+"query:Queue:flags # \"q\""
+"query:Starred:flags # \"s\""
+
+"═══════════════════════════════════| Youtube |══════════════════════════════════════"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXPHFM88IlFn68OmLwtPmZA "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3ETCazlHenpXEsrEJH-k5A "youtube"
+https://www.youtube.com/feeds/videos.xml?user=Kurzgesagt "youtube"
+https://www.youtube.com/feeds/videos.xml?user=OmegaDungeon "youtube"
+https://www.youtube.com/feeds/videos.xml?user=voxdotcom "youtube"
+https://www.youtube.com/feeds/videos.xml?user=VanossGaming "youtube"
+https://www.youtube.com/feeds/videos.xml?user=PewDiePie "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2bNrKQbJLphxNCd6BSnTkA "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEQXp_fcqwPcqrzNtWJ1w9w "youtube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCF6WjcZeVqy3MLBpp86eOyw "youtube"
+https://www.youtube.com/feeds/videos.xml?user=MentalOutlawStudios "youtube"
+
+"═════════════════════════════════| Reddit |═════════════════════════════════════════"
+
+https://www.reddit.com/r/commandline.rss "reddit"
+https://www.reddit.com/r/bash.rss "reddit"
+https://www.reddit.com/r/bspwm.rss "reddit"
+https://www.reddit.com/r/tmux.rss "reddit"
+https://www.reddit.com/r/unixporn.rss "reddit" "unixporn"
+
+"═══════════════════════════════════| People |═══════════════════════════════════════"
+
+http://lukesmith.xyz/rss.xml
+https://feeds.feedburner.com/subinsblog
+https://feeds.feedburner.com/jimmybonney
+https://collegeinfogeek.com/feed/
+http://0pointer.net/blog/index.rss20
+https://overreacted.io/rss.xml
+https://collegeinfogeek.com/podcast
+"══════════════════════════════════| Code |═════════════════════════════════════════"
+https://www.archlinux.org/feeds/news/ "tech"
+https://github.com/LukeSmithxyz/voidrice/commits/master.atom
+"═══════════════════════════════════| Misc |════════════════════════════════════════"
+https://www.tofugu.com/feed.xml
