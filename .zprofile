@@ -25,20 +25,31 @@ export LESSHISTFILE="-"
 export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/inputrc"
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
-#export ALSA_CONFIG_PATH="$XDG_CONFIG_HOME/alsa/asoundrc"
+#export ALSA_CONFIG_PATH="$XDG_CONFIG_HOME/alsa/asoundrc" #I'm using Pulseaudio
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
 export KODI_DATA="${XDG_DATA_HOME:-$HOME/.local/share}/kodi"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
+### The following export is not doing its job well.
+### Still it is better than nothing. Android Studio is hardcoded.
 export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
+export ANDROID_SDK_ROOT="$HOME/Downloads/android-sdk/"
+export ANDROID_AVD_HOME="$XDG_DATA_HOME/android/"
+export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME/android/"
+export ADB_VENDOR_KEYS="$XDG_CONFIG_HOME/android"
+### Android config ends
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+export GEM_HOME="$XDG_DATA_HOME"/gem   # Also delete the line from /etc/gemrc
+export GEM_SPEC_CACHE="$XDG_CACHE_HOME"/gem
 export SQLITE_HISTORY=$XDG_DATA_HOME/sqlite_history
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+#export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java will not work for AndroidStudio
 
 # Other program settings:
 export DICS="/usr/share/stardict/dic/"
@@ -54,7 +65,7 @@ export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"
 export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
 export LESSOPEN="| /usr/bin/highlight -O ansi %s 2>/dev/null"
 export QT_QPA_PLATFORMTHEME="gtk2"	# Have QT use gtk2 theme.
-export MOZ_USE_XINPUT2="1"		# Mozilla smooth scrolling/touchpads.
+export MOZ_USE_XINPUT2="1"		# Mozilla smooth scrolling/touchpads. Nice
 export _JAVA_AWT_WM_NONREPARENTING=1	# Java doesn't understand tiling windows
 export AWT_TOOLKIT="MToolkit wmname LG3D"	#May have to install wmname
 
